@@ -1,0 +1,58 @@
+{
+  "name": "name-easy-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "11.x",
+    "@emotion/styled": "11.x",
+    "@fontsource/roboto": "4.x",
+    "@mui/icons-material": "5.x",
+    "@mui/material": "5.x",
+    "@mui/styles": "5.x",
+    "@primer/octicons-react": "^16.2.0",
+    "axios": "^0.25.0",
+    "base-shell": "2.x",
+    "intl": "1.x",
+    "jss-rtl": "0.x",
+    "material-ui-shell": "3.x",
+    "mui-image": "^1.0.4",
+    "notistack": "2.x",
+    "react": "17.x",
+    "react-custom-scrollbars-2": "4.x",
+    "react-dom": "17.x",
+    "react-easy-crop": "4.x",
+    "react-ga": "^3.3.0",
+    "react-intl": "5.x",
+    "react-ios-pwa-prompt": "1.x",
+    "react-markdown": "7.x",
+    "react-router-dom": "6.x",
+    "react-scripts": "5.0.0",
+    "react-swipeable-views": "^0.14.0",
+    "react-virtualized-auto-sizer": "1.x",
+    "react-window": "1.x"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

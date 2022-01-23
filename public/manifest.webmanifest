@@ -1,0 +1,15 @@
+{
+	"background_color": "#0c0858",
+	"description": "此app 為Born Hub 創辦人Kenneth 為了解決大家改名的煩惱，專程找來一班學生research，再憑他多年的經驗和分析而創作出全球第一個在Born Hub 面世的app，改名易。",
+	"display": "standalone",
+	"icons": [
+		{
+			"src": "nameEasy.svg",
+			"sizes": "any",
+			"type": "image/svg"
+		}
+	],
+	"name": "改名易",
+	"short_name": "改名易",
+	"start_url": "/"
+}

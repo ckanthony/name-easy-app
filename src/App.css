@@ -1,0 +1,84 @@
+/* || general styling */
+
+body, html {
+  display: block !important;
+  background-color: #0c0858 !important;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+.main {
+ padding: 1.5em;
+}
+
+body {
+  background-color: #0c0858;
+}
+
+p {
+  font-size: 1.3em;
+  line-height: 1.6;
+}
+
+/* links to navigation menu, and then back up to the top again */
+
+header, .main {
+  position: relative;
+}
+
+/* || media queries */
+
+@media (min-width: 480px) {
+  #bottom, #top {
+    display: none;
+  }
+  
+  article, nav {
+    display: block;
+  }
+  
+  nav ul {
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline;
+  }
+
+}
+
+@media (min-width: 600px) {
+  html {
+    background-image: url('./assets/paypayduck.png');
+    background-repeat: repeat;
+    height: 100%;
+  }
+  
+  body {
+    width: 600px;
+    height: inherit;
+    margin: 0 auto !important;
+  }
+
+  div {
+  }
+  
+  .main > p {
+    background: rgba(255,255,255,0.3);
+  }
+}
