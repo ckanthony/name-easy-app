@@ -28,4 +28,4 @@ Made with [contrib.rocks](https://contrib.rocks).
 
 免責聲名
 -------
-改名易為香港電視娛樂(下稱ViuTV) 製作之喜劇電視劇 原創劇《IT狗》（英語：In Geek We Trust）的虛構app，版權全部屬於ViuTV，我都冇say，版權擁有者可以決定其他人是否有權使用他們的作品。  本app 所提供的資料只供參考之用，如有需要請以 <ckanthony[at]gmail.com> 和anthony (backend) <jeremytsngtsng[at]gmail.com> Jeremy (frontend) 聯絡。
+改名易為香港電視娛樂(下稱ViuTV) 製作之喜劇電視劇 原創劇《IT狗》（英語：In Geek We Trust）的虛構app，版權全部屬於ViuTV，我都冇say，版權擁有者可以決定其他人是否有權使用他們的作品。  本app 所提供的資料只供參考之用，如有需要請以 <ckanthony[at]gmail.com> 和anthony (backend) <jeremytsang65431[at]gmail.com> Jeremy (frontend) 聯絡。
