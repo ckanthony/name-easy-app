@@ -8,6 +8,8 @@ import SwipeableViews from 'react-swipeable-views';
 import Image from 'mui-image';
 import NotReady from '../../assets/notReady.png';
 import BrandLoading from '../../assets/brandLoading.png';
+import WSW from '../../assets/wsw.png';
+import bottle from '../../assets/bottle.png';
 // import TwitterIcon from '@mui/icons-material/Twitter';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import DefaultLayout from 'layout/default';
@@ -34,6 +36,8 @@ const LandingPage = () => {
   const [resultList, setResultList] = useState([]);
   const [resultListIndex, setResultListIndex] = useState(0);
   const [pageIndex, setPageIndex] = useState(0);
+  const [isSpecial, setIsSpecial] = useState(false);
+  const [specialImage, setSpecialImage] = useState(null);
 
   const [showResultList, setShowResultList] = useState(false);
   const [showVerb, setShowVerb] = useState(false);
@@ -41,6 +45,17 @@ const LandingPage = () => {
   const [credit, setCredit] = useState(false);
 
   const mobileWidth = useMediaQuery('(max-width:425px)');
+
+  const special = [
+    {
+      word: ['woman', 'female'],
+      image: WSW,
+    },
+    {
+      word: ['bottle', 'cup', 'water', 'water bottle'],
+      image: bottle
+    }
+  ]
 
   async function handleResultListIndex(resultList, result) {
     if (resultList.length > 0) {
@@ -73,6 +88,15 @@ const LandingPage = () => {
       }
 
       if (index === 1 && name !== '') {
+        for (let i of special) {
+          for (let y of i.word) {
+            if (name.includes(y)) {
+              setIsSpecial(true);
+              setSpecialImage(i.image);
+              break;
+            }
+          }
+        } 
         setPageIndex(1);
         const _r = await postNameEasy(name);
         const resultList = _r.data;
@@ -102,6 +126,8 @@ const LandingPage = () => {
       setResultListIndex(0);
       setLoading(true);
       setPageIndex(0);
+      setIsSpecial(false);
+      setSpecialImage(null);
     } catch (e) {
       console.log(e);
     }
@@ -204,6 +230,16 @@ const LandingPage = () => {
                   {showResultList && <Fade sx={{ width: '100%' }} in={showResultList}>{Tips(resultList)}</Fade>}
                   <Fade sx={{ width: '100%' }} in={showVerb}>{(Verb(result.verb))}</Fade>
                 </Box>
+                {
+                  isSpecial &&
+                  <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', textAlign: 'center', marginTop: 2 }}>
+                    <Image
+                      src={specialImage}
+                      duration={0}
+                      width="200px"
+                    />
+                  </Box>
+                }
 
               </> :
               <Box style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
