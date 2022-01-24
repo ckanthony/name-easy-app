@@ -3,6 +3,8 @@
 改名易(frontend)
 ===============
 
+<img src="https://i.imgur.com/2xvORiI.jpg" />
+
 此app 為Born Hub 創辦人Kenneth 為了解決大家改名的煩惱，專程找來一班學生research，再憑他多年的經驗和分析而創作出全球第一個在Born Hub 面世的app，改名易。
 
 backend 請見[連結](https://github.com/ckanthony/name-easy-api)
