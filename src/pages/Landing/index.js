@@ -74,7 +74,7 @@ const LandingPage = () => {
         const resultList = _r.data;
 
         if (resultList.length > 0) {
-          const result = resultList[0];
+          const result = resultList[resultList.length - 1];
           setResult(result);
           setResultList(resultList);
           handleResultListIndex(resultList, result);
