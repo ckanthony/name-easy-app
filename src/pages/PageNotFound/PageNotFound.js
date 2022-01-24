@@ -3,6 +3,10 @@ import { Home } from '@mui/icons-material'
 import Page from 'material-ui-shell/lib/containers/Page'
 import React from 'react'
 import { useIntl } from 'react-intl'
+import ReactGA from 'react-ga';
+
+ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_ID);
+ReactGA.pageview(window.location.pathname);
 
 const PageNotFound = () => {
   const intl = useIntl()

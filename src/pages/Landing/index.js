@@ -13,6 +13,10 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import DefaultLayout from 'layout/default';
 import Fade from '@mui/material/Fade';
 import Chip from '@mui/material/Chip';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_ID);
+ReactGA.pageview(window.location.pathname);
 
 function sleep(ms) {
   return new Promise((resolve) => {

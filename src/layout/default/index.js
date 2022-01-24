@@ -17,6 +17,10 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_ID);
+ReactGA.pageview(window.location.pathname);
 
 const DefaultLayout = (props) => {
   const mobileWidth = useMediaQuery('(max-width:425px)');
