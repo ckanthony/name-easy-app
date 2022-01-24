@@ -9,7 +9,14 @@ import Image from 'mui-image';
 import NotReady from '../../assets/notReady.png';
 import BrandLoading from '../../assets/brandLoading.png';
 import WSW from '../../assets/wsw.png';
-import bottle from '../../assets/bottle.png';
+import BadComment from '../../assets/badComment.gif';
+import Toilet from '../../assets/toilet.gif';
+import TV from '../../assets/tvb.gif';
+import Bottle from '../../assets/bottle.png';
+import Bicycle from '../../assets/bicycle.gif';
+import HappyEnding from '../../assets/happyEnding.gif';
+import NFT from '../../assets/nft.png';
+import Genius from '../../assets/genius.gif';
 // import TwitterIcon from '@mui/icons-material/Twitter';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import DefaultLayout from 'layout/default';
@@ -45,13 +52,25 @@ const LandingPage = () => {
 
   const special = [
     {
-      word: ['woman', 'female'],
-      image: WSW,
+      word: ['woman', 'female', 'feminism', 'feminist', 'equal', 'equality'],
+      image: [WSW, BadComment, Toilet],
     },
     {
       word: ['bottle', 'cup', 'water', 'water bottle'],
-      image: bottle
-    }
+      image: [Bottle, Genius]
+    },
+    {
+      word: ['tvb', 'viutv', 'tv', 'viu tv', 'happy', 'ending'],
+      image: [TV, HappyEnding]
+    },
+    {
+      word: ['success', 'successful', 'brian cha', 'brian', 'lou', 'record', 'world record'],
+      image: [Bicycle]
+    },
+    {
+      word: ['nft', 'NFT', 'rich'],
+      image: [NFT]
+    },
   ]
 
   async function handleResultListIndex(resultList, result) {
@@ -89,7 +108,7 @@ const LandingPage = () => {
           for (let y of i.word) {
             if (name.includes(y)) {
               setIsSpecial(true);
-              setSpecialImage(i.image);
+              setSpecialImage(i.image[Math.floor(Math.random() * i.image.length)]);
               break;
             }
           }
