@@ -20,8 +20,8 @@ backend 請見[連結](https://github.com/ckanthony/name-easy-api)
 
 開發者
 -----
-<a href="https://github.com/ckanthony/name-easy-api/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ckanthony/name-easy-api" />
+<a href="https://github.com/ckanthony/name-easy-app/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ckanthony/name-easy-app" />
 </a>
 
 Made with [contrib.rocks](https://contrib.rocks).
