@@ -14,7 +14,7 @@ jobs:
       - run: ssh root@$SSH_ADDR docker system prune -a -f
       - run: docker save name-easy-app:${CIRCLE_BRANCH} | ssh -C root@$SSH_ADDR docker load
       - run: ssh root@$SSH_ADDR "docker rm -f name-easy-app || true"
-      - run: ssh root@$SSH_ADDR docker run --restart=always --name name-easy-app -d -p 127.0.0.1:13000:13000 name-easy-app:$CIRCLE_BRANCH
+      - run: ssh root@$SSH_ADDR docker run --restart=always --name name-easy-app -d -p 127.0.0.1:13000:11000 name-easy-app:$CIRCLE_BRANCH
 workflows:
   version: 2
   build-and-deploy-bot:
